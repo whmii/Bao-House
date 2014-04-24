@@ -22,6 +22,7 @@
 	transition: $property $speed $function;
 }
 
+
 // ========= Lining Lists =========
 
 // Lining declares an inline list for ul, ol and dl
@@ -35,7 +36,9 @@
 		}
 	}
 	@if $type == ol {
+
 		// bullets are removed for inline ul but not for ol!
+
 		li {
 			display: inline-block;
 			margin-right: $after;

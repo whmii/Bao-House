@@ -3,9 +3,11 @@
 // ============================================================
 
 // This is the default html and body font-size for the base rem value.
+
 $rem-base: 16px !default;
 
-// Media Query Functions
+
+// ========= Media Query Functions =========
 
 @function lower-bound($range) {
 	@if length($range) <= 0 {
@@ -21,7 +23,8 @@ $rem-base: 16px !default;
 	@return nth($range, 2);
 }
 
-// Rem Conversions
+
+// ========= Rem Conversions =========
 
 @function strip-unit($num) {
 	@return $num / ($num * 0 + 1);

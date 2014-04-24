@@ -5,6 +5,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 	display: block;
 }
 
+
 // ========= Clearfix =========
 
 .clearfix {
@@ -19,6 +20,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 		clear: both;
 	}
 }
+
 
 // ========= Body Global Styles =========
 
@@ -44,6 +46,7 @@ main {
 }
 
 // Link Styles
+
 a {
 	color: $primary;
 	background: transparent;
@@ -133,7 +136,6 @@ table {
 .icon-facebook:before {
     content: "\e004";
 }
-
 
 
 // ========= Site Head =========
@@ -286,6 +288,7 @@ table {
 }
 
 // Post Footer
+
 .post-footer {
 	position: relative;
 	padding: 4rem 0;
@@ -293,6 +296,7 @@ table {
 
 
 // Author Meta
+
 ul.author-meta {
 	@include lining;
 	padding: 0;
@@ -330,9 +334,8 @@ ul.author-meta {
 	}
 }
 
-/* ==========================================================================
-   6. Tag archive
-   ========================================================================== */
+
+// ========= Tag Archive =========
 
 .archive-template .site-head {
 	height: auto;
@@ -359,11 +362,9 @@ ul.author-meta {
 	display: inline-block;
 }
 
-/* ==========================================================================
-   7. Third Party Elements - Embeds from other services
-   ========================================================================== */
+// ========= Third Party Elements =========
 
-/* Github */
+// Github
 
 .gist table {
 	margin: 0;
@@ -402,7 +403,6 @@ ul.author-meta {
 
 .page-number {
 }
-
 
 
 // ========= Global Footer Styles =========
@@ -450,7 +450,6 @@ ul.author-meta {
 		}
 	}
 }
-
 
 
 // ========= Media Quieries =========

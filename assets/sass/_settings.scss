@@ -17,13 +17,16 @@ $base-line-height: 1.6;
 $base-spacing-unit: $base-line-height;
 $base-font-size: 16px;
 
+
 // ========= Conversion Functions =========
 
 @import "libs/functions";
 
+
 // ========= Grid Variables =========
 
 // Roll your own, yo
+
 
 // ========= Media Queries =========
 
@@ -40,6 +43,7 @@ $large: "only screen and (min-width:#{$large-screen})" !default;
 $landscape: "only screen and (orientation: landscape)" !default;
 $portrait: "only screen and (orientation: portrait)" !default;
 
+
 // ========= Core Settings =========
 
 $h1-font-size: rem-calc(44);
@@ -50,14 +54,18 @@ $h5-font-size: rem-calc(18);
 $h6-font-size: rem-calc(16);
 
 // Small Print
+
 $small-font-size: 65%;
 
 // Indentation for dl, ul, blockquote
+
 $indent-amount: 1em;
 
 // Fonts
+
 $base-font-family: 'Noto Serif', serif;
 $header-font-family: 'Open Sans', sans-serif;
+
 
 // ========= Color Settings =========
 
