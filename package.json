@@ -1,14 +1,19 @@
 {
-  "name": "Abstraction",
-  "version": "0.0.1",
-  "devDependencies": {
-    "gulp": "^3.6.0",
-    "gulp-imagemin": "^0.2.0",
-    "gulp-watch": "^0.6.2",
-    "gulp-jshint": "^1.5.3",
-    "gulp-autoprefixer": "0.0.7",
-    "gulp-changed": "^0.3.0",
-    "gulp-notify": "^1.2.5",
-    "jshint-stylish": "^0.1.5"
-  }
+	"name": "Abstraction",
+	"description": "A bulp based scaffold for building ghost themes",
+	"version": "0.1.0",
+	"repository": {
+		"type": "git",
+		"url": "http://github.com/whmii/Abstraction"
+	},
+	"devDependencies": {
+		"gulp": "^3.6.0",
+		"gulp-imagemin": "^0.2.0",
+		"gulp-watch": "^0.6.2",
+		"gulp-jshint": "^1.5.3",
+		"gulp-autoprefixer": "0.0.7",
+		"gulp-changed": "^0.3.0",
+		"gulp-notify": "^1.2.5",
+		"jshint-stylish": "^0.1.5"
+	}
 }

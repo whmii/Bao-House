@@ -5,7 +5,11 @@ The gulp and node sass theme scaffold derived from [Casper](https://github.com/t
 ## Features
 
 - Gulp integration
+
 - Blazing fast Node-Sass
+
 - The amazing power of Autoprefixer
+
 - Image minification
+
 - Js Hint with Stylish
