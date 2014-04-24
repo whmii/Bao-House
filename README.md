@@ -1,6 +1,6 @@
 # Abstraction
 
-The gulp and node sass theme scaflod derived from [Casper](https://github.com/tryghost/casper) for developing [Ghost](http://github.com/tryghost/ghost/) themes.
+The gulp and node sass theme scaffold derived from [Casper](https://github.com/tryghost/casper) for developing [Ghost](http://github.com/tryghost/ghost/) themes.
 
 ## Features
 
