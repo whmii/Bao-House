@@ -10,7 +10,7 @@ $em-base: 16px;
 // Fonts size and line height defaults for our calculations
 
 $base-font-size: 1em;
-$base-line-height: 1.5;
+$base-line-height: 1.6;
 
 // Font sizes are then abstracted to global spacing behaviors
 
@@ -23,25 +23,7 @@ $base-font-size: 16px;
 
 // ========= Grid Variables =========
 
-$default-float: left;
-$text-direction: ltr;
-$opposite-direction: right;
-
-@if $text-direction == ltr {
-	$default-float: left;
-	$opposite-direction: right;
-}
-@else {
-	$default-float: right;
-	$opposite-direction: left;
-}
-
-$include-html-grid-classes: false;
-$row-width: rem-calc(1440);
-$column-gutter: rem-calc(30);
-$total-columns: 12;
-
-$include-html-grid-classes: false;
+// Roll your own, yo
 
 // ========= Media Queries =========
 
@@ -73,25 +55,25 @@ $small-font-size: 65%;
 // Indentation for dl, ul, blockquote
 $indent-amount: 1em;
 
+// Fonts
+$base-font-family: 'Noto Serif', serif;
+$header-font-family: 'Open Sans', sans-serif;
+
 // ========= Color Settings =========
 
 $primary: #d34836;
+$primary-alt: scale-color($primary, $lightness: -30%);
 $secondary: #4b4b4b;
-$tertiary: #d2d2d2;
+$tertiary: #9b9b9b;
 
 // Primary roles
 
 $base-color: #2b2b2b;
 $base-bg: whitesmoke;
 $heading-color: $secondary;
-$secondary-heading-color: $tertiary;
 $alert: red;
 $success: green;
 
-// Links
-
-$action: $primary;
-$action-alt: darken($primary, 5%);
 
 // ========= Component Settings =========
 

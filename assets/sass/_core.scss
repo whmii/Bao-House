@@ -32,19 +32,23 @@ html {
 
 body {
 	color: $base-color;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: $base-font-family;
 	font-size: $base-font-size;
+	line-height: $base-line-height;
 	background-color: $base-bg;
-	padding: 3em;
 	margin: 0;
+}
+
+main {
+	@include clearfix;
 }
 
 // Link Styles
 a {
-	color: $action;
+	color: $primary;
 	background: transparent;
 	&:hover, &:focus, &:active {
-		color: $action-alt;
+		color: $primary-alt;
 	}
 	&:active, &:hover {
 		outline: 0;
@@ -80,45 +84,376 @@ table {
 	border-spacing: 0;
 }
 
-// Navigation Styles
 
-nav {
-	ul {
-		@include lining(ul, 1em);
+// ========= Icon Styles =========
+
+@font-face {
+	font-family: 'icons';
+	src:url('../fonts/icons.eot');
+	src:url('../fonts/icons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icons.woff') format('woff'),
+		url('../fonts/icons.ttf') format('truetype'),
+		url('../fonts/icons.svg#icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.icon-ghost,
+.icon-feed,
+.icon-twitter,
+.icon-google-plus,
+.icon-facebook {
+	&:before{
+		font-family: 'icons';
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		text-decoration: none;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
 	}
 }
 
-// Example Grid Styles
+.icon-ghost:before {
+    content: "\e000";
+}
+.icon-feed:before {
+    content: "\e001";
+}
+.icon-twitter:before {
+    content: "\e002";
+    font-size: 1.1em;
+}
+.icon-google-plus:before {
+    content: "\e003";
+}
+.icon-facebook:before {
+    content: "\e004";
+}
 
-//  .wrap-page-section {
-// 	 & > section {
-// 		 @include grid-row;
-// 		 @extend %island;
-// 		 & > h1 {
-// 			 @include grid-column($columns: 12);
-// 			 text-align: center;
-// 		 }
-// 		 & > article {
-// /			 @include grid-column($columns: 12);
-// /		 }
-// /		 @media #{$small} {
-// /			 & > h1 {
-// /				 @include grid-column($columns: 6);
-// /			 }
-// /			 & > article {
-// /				 @include grid-column($columns: 6);
-// /			 }
-// /		 }
-// /		 @media #{$medium} {
-// /			 & > h1 {
-// /				 @include grid-column($columns: 4);
-// /			 }
-// /			 & > article {
-// /				 @include grid-column($columns: 8);
-// /			 }
-// /		 }
-// /	 }
-// / }
+
+
+// ========= Site Head =========
+
+.site-head {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	color: $base-bg;
+	background: $secondary no-repeat center center;
+	background-size: cover;
+	@include clearfix;
+
+	.site-head-content {
+		margin: 4rem 0;
+	}
+
+	.blog-logo {
+		text-decoration: none;
+		img {
+			display: block;
+			width: auto;
+			margin: 0 auto;
+		}
+	}
+
+	h1.blog-title {
+		font-weight: bold;
+		font-family: $header-font-family;
+		color: $base-bg;
+	}
+
+	h2.blog-description {
+		font-weight: 300;
+		font-family: $base-font-family;
+		color: $base-bg;
+	}
+}
+
+
+// ========= Posts =========
+
+.post {
+	word-break: break-word;
+	hyphens: auto;
+	margin: 4rem auto;
+	width: 80%;
+	max-width: rem-calc(700);
+}
+
+.post-title {
+
+	a {
+	}
+}
+
+.post-excerpt {
+
+	p {
+
+	}
+}
+
+.read-more {
+}
+
+.post-meta {
+	display: inline-block;
+	margin: 0 0 0.25rem 0;
+	font-family: $base-font-family;
+	font-size: 1rem;
+	color: $tertiary;
+	a {
+		color: $tertiary;
+
+		&:hover {
+			color: $primary-alt;
+		}
+	}
+
+}
+
+.user-meta {
+	.user-image {
+	}
+
+	.user-name {
+	}
+
+	.user-bio {
+	}
+
+}
+
+
+.publish-meta {
+
+	.publish-heading {
+	}
+
+	.publish-date {
+	}
+
+}
+
+
+// ========= Single Posts =========
+
+// Post Header
+
+.post-template {
+	
+	.content {
+	}
+
+	.post {
+	}
+
+	.post-header {
+		margin-bottom: 4rem;
+		text-align: center;
+
+		a.blog-logo {
+			display: block;
+		}
+
+		img {
+			display: block;
+			width: auto;
+			margin: 0 auto;
+		}
+		
+		.blog-title {
+			
+		}
+	}
+}
+
+// Post Content
+
+.post-content {
+	
+	img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+		margin: 0 auto;
+		padding: 1.6em 0;
+	}
+}
+
+// Post Footer
+.post-footer {
+	position: relative;
+	padding: 4rem 0;
+}
+
+
+// Author Meta
+ul.author-meta {
+	@include lining;
+	padding: 0;
+	font-style: italic;
+	color: $tertiary;
+	
+	li {
+
+		a {
+			color: $tertiary;
+			text-decoration: underline;
+			&:hover {
+				color: $primary-alt;
+			}
+		}
+	}
+}
+
+.post-footer .share a {
+	display: inline-block;
+	margin: 1rem 1.6rem 1.6rem 0;
+	color: $tertiary;
+	text-decoration: none;
+
+	&:before {
+		text-decoration: none;
+	}
+
+	span {
+		text-decoration: underline;
+	}
+
+	&:hover {
+		color: $primary;
+	}
+}
+
+/* ==========================================================================
+   6. Tag archive
+   ========================================================================== */
+
+.archive-template .site-head {
+	height: auto;
+	padding-bottom: 5rem;
+}
+
+.archive-template .site-head a {
+	color: $base-bg;
+}
+
+.archive-template .blog-logo {
+	display: block;
+	margin-top: 5rem;
+}
+
+.tag-archive-header {
+	text-align: center;
+	max-width: rem-calc(700);
+	margin: 4rem auto;
+	position: relative;
+}
+
+.archive-template .blog-title {
+	display: inline-block;
+}
+
+/* ==========================================================================
+   7. Third Party Elements - Embeds from other services
+   ========================================================================== */
+
+/* Github */
+
+.gist table {
+	margin: 0;
+	font-size: 1.4rem;
+}
+
+.gist .line-number {
+	min-width: 25px;
+	font-size: 1.1rem;
+}
+
+
+// ========= Pagination =========
+
+.pagination {
+	position: relative;
+	width: 80%;
+	max-width: rem-calc(700);
+	margin: 4rem auto;
+	font-family: $header-font-family;
+	color: $tertiary;
+	text-align: center;
+}
+
+.pagination a {
+	color: $tertiary;
+	text-decoration: underline;
+	&:hover {
+		color: $primary-alt;
+	}
+}
+
+.older-posts,
+.newer-posts {
+}
+
+.page-number {
+}
+
+
+
+// ========= Global Footer Styles =========
+
+.site-footer {
+	position: relative;
+	font-family: $header-font-family;
+	color: $tertiary;
+	text-align: center;
+
+	a {
+		color: $tertiary;
+		text-decoration: underline;
+		
+		&:hover {
+			color: $primary-alt;
+		}
+	}
+	
+	.subscribe {
+		text-align: center;
+		text-decoration: none;
+
+		&:before {
+			text-decoration: none;
+			padding-right: 0.5em;
+		}
+		
+		span {
+			text-decoration: underline;
+		}
+	}
+}
+
+
+.poweredby {
+
+	 .icon-ghost {
+		font-weight: 700;
+		text-decoration: none;
+		
+		&:before {
+			font-size: 1rem;
+			margin-right: 0.2em;
+		}
+	}
+}
+
+
+
+// ========= Media Quieries =========
 
 @media #{$screen} {}
 
