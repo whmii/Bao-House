@@ -1,6 +1,6 @@
 {
 	"name": "Abstraction",
-	"description": "A bulp based scaffold for building ghost themes",
+	"description": "A gulp based scaffold for building ghost themes",
 	"version": "0.1.0",
 	"repository": {
 		"type": "git",
