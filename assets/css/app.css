@@ -172,7 +172,7 @@ main {
   zoom: 1; }
   main:before, main:after {
     content: "\0020";
-    display: block;
+    display: table;
     height: 0;
     overflow: hidden; }
   main:after {
@@ -253,7 +253,7 @@ table {
   zoom: 1; }
   .site-head:before, .site-head:after {
     content: "\0020";
-    display: block;
+    display: table;
     height: 0;
     overflow: hidden; }
   .site-head:after {
