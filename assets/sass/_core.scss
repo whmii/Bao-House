@@ -186,8 +186,11 @@ table {
 	word-break: break-word;
 	hyphens: auto;
 	margin: 4rem auto;
-	width: 80%;
+	width: 90%;
 	max-width: rem-calc(700);
+	@media #{$small} {
+		width: 80%;
+	}
 }
 
 .post-title {

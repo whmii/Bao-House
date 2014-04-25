@@ -286,8 +286,11 @@ table {
   -ms-hyphens: auto;
   hyphens: auto;
   margin: 4rem auto;
-  width: 80%;
+  width: 90%;
   max-width: 43.75rem; }
+  @media only screen and (min-width: 768px) {
+    .post {
+      width: 80%; } }
 
 
 
