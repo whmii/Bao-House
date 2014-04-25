@@ -271,8 +271,12 @@ table {
     font-family: 'Open Sans', sans-serif;
     color: whitesmoke; }
   .site-head h2.blog-description {
+    font-size: 1.125rem;
     font-weight: 300;
     font-family: 'Noto Serif', serif;
+    max-width: 43.75rem;
+    margin-left: auto;
+    margin-right: auto;
     color: whitesmoke; }
 
 .post {
@@ -348,9 +352,6 @@ ul.author-meta {
   .post-footer .share a:hover {
     color: #d34836; }
 
-/* ==========================================================================
-   6. Tag archive
-   ========================================================================== */
 .archive-template .site-head {
   height: auto;
   padding-bottom: 5rem; }
@@ -371,10 +372,6 @@ ul.author-meta {
 .archive-template .blog-title {
   display: inline-block; }
 
-/* ==========================================================================
-   7. Third Party Elements - Embeds from other services
-   ========================================================================== */
-/* Github */
 .gist table {
   margin: 0;
   font-size: 1.4rem; }

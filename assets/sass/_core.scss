@@ -169,8 +169,12 @@ table {
 	}
 
 	h2.blog-description {
+		font-size: 1.125rem;
 		font-weight: 300;
 		font-family: $base-font-family;
+		max-width: rem-calc(700);
+		margin-left: auto;
+		margin-right: auto;
 		color: $base-bg;
 	}
 }
