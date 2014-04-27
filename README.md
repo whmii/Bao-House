@@ -1,4 +1,5 @@
-# Abstraction
+# Bao-House
+
 
 The gulp and node-sass theme scaffold derived from [Casper](https://github.com/tryghost/casper) for developing [Ghost](http://github.com/tryghost/ghost/) themes.
 
