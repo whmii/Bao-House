@@ -10,7 +10,7 @@ $em-base: 16px;
 // Fonts size and line height defaults for our calculations
 
 $base-font-size: 1em;
-$base-line-height: 1.6;
+$base-line-height: 1.75;
 
 // Font sizes are then abstracted to global spacing behaviors
 
@@ -46,7 +46,7 @@ $portrait: "only screen and (orientation: portrait)" !default;
 
 // ========= Core Settings =========
 
-$h1-font-size: rem-calc(44);
+$h1-font-size: rem-calc(48);
 $h2-font-size: rem-calc(37);
 $h3-font-size: rem-calc(27);
 $h4-font-size: rem-calc(23);
@@ -59,12 +59,12 @@ $small-font-size: 65%;
 
 // Indentation for dl, ul, blockquote
 
-$indent-amount: 1em;
+$indent-amount: 2rem;
 
 // Fonts
 
-$base-font-family: 'Open Sans', sans-serif;
-$header-font-family: 'Open Sans', sans-serif;
+$base-font-family: 'Lato', sans-serif;
+$header-font-family: 'Lato', sans-serif;
 
 
 // ========= Color Settings =========
@@ -76,9 +76,10 @@ $tertiary: #9b9b9b;
 
 // Primary roles
 
-$base-color: #2b2b2b;
-$base-bg: whitesmoke;
-$heading-color: $secondary;
+$base-color: #4a4a4a;
+$base-bg: #f8f8f8;
+$base-bg-alt: #ffffff;
+$heading-color: $base-color;
 $alert: red;
 $success: green;
 

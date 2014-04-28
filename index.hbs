@@ -6,8 +6,11 @@
 {{! The big featured header on the homepage, with the site logo and description }}
 <header class="site-head" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
 	<div class="site-head-content inner">
-		{{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
-		<h1 class="blog-title">{{@blog.title}}</h1>
+		{{#if @blog.logo}}
+			<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>
+		{{else}}
+			<h1 class="blog-title">{{@blog.title}}</h1>
+		{{/if}}
 		<h2 class="blog-description">{{@blog.description}}</h2>
 	</div>
 </header>
@@ -20,12 +23,15 @@
 
 	<article class="{{post_class}}">
 		<header class="post-header">
-			<span class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> {{tags prefix="on "}}</span>
+			<a href="{{url}}">{{content words=0}}</a>
 			<h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
 		</header>
 		<section class="post-excerpt">
-			<p>{{excerpt}}&hellip; <a class="read-more" href="{{url}}">read</a></p>
+			<p>{{excerpt}}&hellip; <a class="read-more" href="{{url}}">Read</a></p>
 		</section>
+		<footer>
+			<span class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> {{tags separator=" "}}</span>
+		</footer>
 	</article>
 
 	{{/foreach}}
